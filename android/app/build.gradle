@@ -53,3 +53,7 @@ android {
 flutter {
     source '../..'
 }
+
+dependencies {
+    implementation 'org.jetbrains:annotations:15.0'
+}

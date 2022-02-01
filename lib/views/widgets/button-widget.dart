@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class ButtonWidget extends StatelessWidget {
   final String text;
-  final List<Color> backColor;
+  final List<Color> blackColor;
 
   final List<Color> textColor;
   final GestureTapCallback onPressed;
@@ -12,7 +12,7 @@ class ButtonWidget extends StatelessWidget {
   const ButtonWidget({
     Key? key,
     required this.text,
-    required this.backColor,
+    required this.blackColor,
     required this.textColor,
     required this.onPressed,
   }) : super(key: key);
@@ -42,7 +42,7 @@ class ButtonWidget extends StatelessWidget {
               stops: const [0.4, 2],
               begin: Alignment.centerRight,
               end: Alignment.centerLeft,
-              colors: backColor,
+              colors: blackColor,
             ),
           ),
           child: Align(

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="snooze">Snooze</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="treatment_title">Treatment Alarm</string>
+    <string name="treatment_content">Ensure to take your next dose of drug(s)</string>
+</resources>

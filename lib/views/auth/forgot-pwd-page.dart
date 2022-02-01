@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:med_report/widgets/buttonWidget.dart';
+import 'package:med_report/views/widgets/button-widget.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
   const ForgotPasswordPage({Key? key}) : super(key: key);
@@ -90,11 +90,11 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                             horizontal: size.width * 0.055),
                         child: Align(
                           child: Text(
-                            "Forgot your password? That's okay, it happens to everyone!\nPlease provide your email to reset your password.",
+                            "Forgot your password ? That's okay, it happens to everyone! - Please provide your email to reset your password.",
                             style: GoogleFonts.poppins(
                               color:
                                   isDarkMode ? Colors.white54 : Colors.black54,
-                              fontSize: size.height * 0.02,
+                              fontSize: size.height * 0.015,
                             ),
                           ),
                         ),
@@ -133,7 +133,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                         padding: EdgeInsets.only(top: size.height * 0.025),
                         child: ButtonWidget(
                             text: 'Send Instruction',
-                            backColor: isDarkMode
+                            blackColor: isDarkMode
                                 ? [
                                     Colors.black,
                                     Colors.black,
@@ -156,7 +156,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'Login',
+                              'medA',
                               style: GoogleFonts.poppins(
                                 color: isDarkMode ? Colors.white : Colors.black,
                                 fontSize: size.height * 0.045,
@@ -223,12 +223,12 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               ),
               border: InputBorder.none,
               contentPadding: EdgeInsets.only(
-                top: size.height * 0.02,
+                top: size.height * 0.015,
               ),
               hintText: hintText,
               prefixIcon: Padding(
                 padding: EdgeInsets.only(
-                  top: size.height * 0.005,
+                  top: size.height * 0.001,
                 ),
                 child: Icon(
                   icon,

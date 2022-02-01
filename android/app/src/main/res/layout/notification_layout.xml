@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="120dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:paddingBottom="2dp"
+        android:layout_width="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="07"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:text="30"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/treatment_title"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="17sp"/>
+
+            <TextView
+                style="@style/TextAppearance.Compat.Notification.Info"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/treatment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="@android:color/black"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/app_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/snooze"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="2.5dp"
+            android:background="@drawable/btn_border_001"
+            android:text="@string/snooze"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="2.5dp"
+            android:background="@drawable/btn_border_001"
+            android:text="@string/dismiss"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
